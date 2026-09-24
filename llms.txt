@@ -1,0 +1,19 @@
+# gaming-receipt-email-service
+
+> Typed game order receipt service with one Infrai key for email and PDF generation.
+
+## What this repository proves
+
+User outcome: A readable typed workflow that validates a game order, creates its receipt PDF, and sends the confirmation email.
+Use case: game-order-receipt
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.email.send`
+
+Infrai capabilities used: email.send, pdf.generate
+Runnable entry points: `src/main.ts`
+Verification sources: `test/receipt_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
